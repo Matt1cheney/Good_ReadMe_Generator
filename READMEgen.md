@@ -7,28 +7,28 @@
   #### matt@gmail.com
   
   ## a little about the project
-    the dog went to the park and then left the park. afterward the dog peed on the hydrant. after sniffing the hydrant he then felt the need to bark at a few neighbors. feeling satisfied with all the disruption from the barking he then decided to poop on his favorite lawn.. sorry Ms. Pariwinkle. I finally finished his walk and once inside I proceeded to give him a few treats. good doggo!
+    sdfkjnsdkfskljlkdsanfvcxmlkvjdaskljadsjfdfkjffdkfvdewjddskjfdeffdeifjfdkjfewidfijfdevdjkdvdsjidivdsjsdkfjoflsadj.,xdsfpowifhjas;kchladfhelkjfilhgsaddsiadvdnvodvfnfvjadfhviesfhdg;
   
   ## Table Of Contents
       Grab a list of values here
   
   # Before you start, You'll need this!
-    inquierer, blue, green
+    green, red, blue. orange
   
   ## What was used to make this project
-    to talk about my dog
+    to poo
   
   
   ## Licensing
    my drivers
   
   ## Contributing Guidelines
-    be good to doggos.
+    bee good at poo.
   
   # tests
     yes
   
   # questions
-    whatever this is supposed to mean
+    no
     
   

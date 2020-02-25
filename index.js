@@ -7,6 +7,16 @@ inquirer
     name: "name"
 },
     {
+      type:"input",
+      message:"What is your name?",
+      name:"userName"
+},
+    {
+      type:"input",
+      message:"What is your email?",
+      name:"email",
+},
+    {
     type:"input",
     message: "please write out a brief description of your project.",
     name: "description"
@@ -25,7 +35,11 @@ inquirer
     type:"input",
     message:"What licensing is this project under?",
     name:"license"
-
+},
+    {
+    type:"input",
+    message:"what are the contribution guidelines?",
+    name:"guidelines"
 },
     {
     type:"input",
@@ -40,47 +54,41 @@ inquirer
 }
 ])
 .then (function(response) {
-  const readMe =`<!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous"
-      />
-      <title>generate your profile!</title>
-    </head>
-    <body>
-      <div class="container-fluid">
-        <header class="text-center jumbotron">
-          <h1 class="name">${response.name}</h1>
-        </header>
-        <div class="row">
-          <div class="mx-auto locationDiv">
-            <h3 class="location">${response.location}</h3>
-          </div>
+  const readMe =`[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+  [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
   
-          <div class="mx-auto bioDiv">
-            <p class="bio">${response.about}</p>
-          </div>
-        </div>
-        <div class="text-center mx-auto card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Below is a list of my URL's!</h5>
-            <a href="${response.LinkedInURL}" class="card-link">My LinkedIn</a>
-            <a href="${response.GitHubURL}" class="card-link">My GitHub Link</a>
-          </div>
-        </div>
-          </ul>
-        </div>
-      </div>
-    </body>
-  </html>
+  # ${response.name}.
+  #### ${response.userName}
+  #### ${response.email}
+  
+  ## a little about the project
+    ${response.description}
+  
+  ## Table Of Contents
+      Grab a list of values here
+  
+  # Before you start, You'll need this!
+    ${response.npmInstall}
+  
+  ## What was used to make this project
+    ${response.usage}
+  
+  
+  ## Licensing
+   ${response.license}
+  
+  ## Contributing Guidelines
+    ${response.guidelines}.
+  
+  # tests
+    ${response.test}
+  
+  # questions
+    ${response.questions}
+    
   `
-  fs.writeFile("README.md", readMe, function(err) {
+  fs.writeFile("READMEgen.md", readMe, function(err) {
   });
   
 });
