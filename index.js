@@ -43,16 +43,20 @@ inquirer
 },
     {
     type:"input",
-    message:"something about tests",
+    message:"What are the requirements to test your program?",
     name: "test"
 },
     {
       type:"input",
-      message:"questions go here",
-      name:"questions"
+      message:"Please provide your GitHub Username.",
+      name:"username"
 
 }
 ])
+.then (function({username}){
+  const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`
+
+})
 .then (function(response) {
   const readMe =`[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 

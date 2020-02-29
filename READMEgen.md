@@ -7,28 +7,28 @@
   #### matt@gmail.com
   
   ## a little about the project
-    sdfkjnsdkfskljlkdsanfvcxmlkvjdaskljadsjfdfkjffdkfvdewjddskjfdeffdeifjfdkjfewidfijfdevdjkdvdsjidivdsjsdkfjoflsadj.,xdsfpowifhjas;kchladfhelkjfilhgsaddsiadvdnvodvfnfvjadfhviesfhdg;
+   sdfkjnsdkfskljlkdsanfvcxmlkvjdaskljadsjfdfkjffdkfvdewjddskjfdeffdeifjfdkjfewidfijfdevdjkdvdsjidivdsjsdkfjoflsadj.,xdsfpowifhjas;kchladfhelkjfilhgsaddsiadvdnvodvfnfvjadfhviesfhdg;
   
   ## Table Of Contents
-      Grab a list of values here
+   Grab a list of values here
   
   # Before you start, You'll need this!
-    green, red, blue. orange
+  green, red, blue. orange
   
   ## What was used to make this project
-    to poo
+  to poo
   
   
   ## Licensing
-   my drivers
-  
+  my drivers
+
   ## Contributing Guidelines
-    bee good at poo.
+  bee good at poo.
   
   # tests
-    yes
+   yes
   
   # questions
-    no
+  no
     
   
