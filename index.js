@@ -15,13 +15,7 @@ inquirer
     {
       type:"input",
       message:"What is your email?",
-      name:"email",
-      validate: function() {
-        if (!input) {
-          throw new error("please provide and email.")
-        }
-
-      }
+      name:"email"
 },
     {
     type:"input",
@@ -74,36 +68,36 @@ inquirer
 
   [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
   
-  # ${response.name}.
-  #### ${response.userName}
-  #### ${response.email}
+# ${response.name}.
+#### ${response.userName}
+#### ${response.email}
   
-  ## a little about the project
-    ${response.description}
+## a little about the project
+${response.description}
   
-  ## Table Of Contents
-      Grab a list of values here
+## Table Of Contents
+Grab a list of values here
   
-  # Before you start, You'll need this!
-    ${response.npmInstall}
+# Before you start, You'll need this!
+${response.npmInstall}
   
-  ## What was used to make this project
-    ${response.usage}
+## What was used to make this project
+${response.usage}
   
   
-  ## Licensing
-   ${response.license}
+## Licensing
+${response.license}
   
-  ## Contributing Guidelines
-    ${response.guidelines}.
+## Contributing Guidelines
+${response.guidelines}.
   
-  # tests
-    ${response.test}
+# tests
+${response.test}
   
-  # questions
-  ![${res.data.html_url}](${res.data.avatar_url}&s=50)
+# questions
+![${res.data.html_url}](${res.data.avatar_url}&s=50)
   
-  email: ${res.data.email}.
+email: ${res.data.email}.
     
   `
   fs.writeFile("READMEgen.md", readMe, function() {
