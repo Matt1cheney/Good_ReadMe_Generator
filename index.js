@@ -1,5 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const axios = require("axios");
 inquirer
 .prompt([{
     type: "input",
@@ -15,6 +16,12 @@ inquirer
       type:"input",
       message:"What is your email?",
       name:"email",
+      validate: function() {
+        if (!input) {
+          throw new error("please provide and email.")
+        }
+
+      }
 },
     {
     type:"input",
@@ -53,11 +60,16 @@ inquirer
 
 }
 ])
-.then (function({username}){
-  const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`
 
-})
+
+
 .then (function(response) {
+  const queryUrl = `https://api.github.com/users/${response.username}`
+  axios
+.get(queryUrl).then(function(res){
+ 
+
+
   const readMe =`[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
   [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
@@ -89,10 +101,13 @@ inquirer
     ${response.test}
   
   # questions
-    ${response.questions}
+  ![${res.data.html_url}](${res.data.avatar_url}&s=50)
+  
+  email: ${res.data.email}.
     
   `
-  fs.writeFile("READMEgen.md", readMe, function(err) {
+  fs.writeFile("READMEgen.md", readMe, function() {
   });
+})
   
 });
